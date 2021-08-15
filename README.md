@@ -114,7 +114,7 @@ config = {"user":"root",
 
 * Use the furnished schema to create tables in your RDS database.
 
-* Two separate Jupyter Notebooks have been created and are availble in the [notebooks](../notebooks) folder where the data for Amazon Reviews Health Personal Care and Personal Care Appliances has been **extracted** from the list at [review dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) into each notebook.
+* Two separate Jupyter Notebooks have been created and are availble in the [notebooks](https://github.com/alysnow/big-data-challenge/tree/main/notebooks) folder where the data for Amazon Reviews Health Personal Care and Personal Care Appliances has been **extracted** from the list at [review dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) into each notebook.
 
 * Each dataset has the following number of records (rows) in the dataset.
 
@@ -129,7 +129,7 @@ config = {"user":"root",
 
 ### Transform
 
-* **Transform** the dataset to fit the tables in the [schema file](../resources/schema.sql). Below is an example of the review_id_table schema to show DataFrame matches the data type and column name.
+* **Transform** the dataset to fit the tables in the [schema file](https://github.com/alysnow/big-data-challenge/blob/main/resources/schema.sql). Below is an example of the review_id_table schema to show DataFrame matches the data type and column name.
 
 ![review_id_table_schema.PNG](images/review_id_table_schema.PNG)
 
