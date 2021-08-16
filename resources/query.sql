@@ -1,0 +1,72 @@
+------------------------------------------------------------------
+CREATE TABLE review_id_table (
+  review_id TEXT PRIMARY KEY NOT NULL,
+  customer_id INTEGER,
+  product_id TEXT,
+  product_parent INTEGER,
+  review_date DATE -- this should be in the formate yyyy-mm-dd
+);
+
+-- This table will contain only unique values
+CREATE TABLE products (
+  product_id TEXT PRIMARY KEY NOT NULL UNIQUE,
+  product_title TEXT
+);
+
+-- Customer table for first data set
+CREATE TABLE customers (
+  customer_id INT PRIMARY KEY NOT NULL UNIQUE,
+  customer_count INT
+);
+
+-- vine table
+CREATE TABLE vine_table (
+  review_id TEXT PRIMARY KEY,
+  star_rating INTEGER,
+  helpful_votes INTEGER,
+  total_votes INTEGER,
+  vine TEXT
+);
+------------------------------------------------------------------
+
+SELECT * FROM review_id_table
+SELECT * FROM products
+SELECT * FROM customers
+SELECT * FROM vine_table
+
+------------------------------------------------------------------
+
+DROP TABLE review_id_table
+DROP TABLE products
+DROP TABLE customers
+DROP TABLE vine_table
+
+------------------------------------------------------------------
+
+DROP TABLE products
+
+CREATE TABLE products (
+  product_id TEXT,
+  product_title TEXT
+);
+
+------------------------------------------------------------------
+DROP TABLE customers
+
+-- Customer table for first data set
+CREATE TABLE customers (
+  customer_id INT,
+  customer_count INT
+);
+------------------------------------------------------------------
+
+DROP TABLE vine_table
+
+-- vine table
+CREATE TABLE vine_table (
+  review_id TEXT,
+  star_rating INTEGER,
+  helpful_votes INTEGER,
+  total_votes INTEGER,
+  vine TEXT
+);

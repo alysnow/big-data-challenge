@@ -27,6 +27,10 @@ big-data-challenge
 |     |__ HealthPersonalCare_dataset_records.PNG          # Record Results png
 |     |__ PersonalCareAppliances_dataset_records.PNG      # Record Results png
 |     |__ pgAdmin.PNG                                     # Database create tables png
+|     |__ pgAdmin_customers_table.PNG                     # Database customers tabl png
+|     |__ pgAdmin_products_table.PNG                      # Database products table png
+|     |__ pgAdmin_review_id_table.PNG                     # Database review_id table png
+|     |__ pgAdmin_vine_table.PNG                          # Database vine table png
 |     |__ pgAdmin2.PNG                                    # Database table png
 |     |__ review_id_table_schema.PNG                      # Schema png
 |__
@@ -35,6 +39,7 @@ big-data-challenge
 |     |__ amazon_reviews_Personal_Care_Appliances.ipynb   # Personal Care Appliances notebook #2
 |__
 |  |__ resources/                                         # SQL Resource files
+|     |__ query.sql                                       # Query file
 |     |__ schema.sql                                      # Main Schema file
 |     |__ vine_schema.sql                                 # Vine Schema file
 
@@ -138,9 +143,11 @@ config = {"user":"root",
 
 * **Load** the DataFrames that correspond to tables into an RDS instance. **Note:** This process can take up to 10 minutes for each. Be sure that everything is correct before uploading.
 
-Below is a screenshot of the amazon_reviews_db in pgAdmin with a view of the review_id_table after taking 26 minutes to load from the google colab notebook to the corresponding table into the RDS instance using the following code "review_id_table.write.jdbc(url=jdbc_url, table='review_id_table', mode=mode, properties=config)" to write the DataFrame to the review_id_table in RDS
+Below is a screenshot of the **amazon_reviews_db** in pgAdmin with a view of the review_id_table after taking 26 minutes to load from the google colab notebook to the corresponding table into the RDS instance using the following code "review_id_table.write.jdbc(url=jdbc_url, table='review_id_table', mode=mode, properties=config)" to write the DataFrame to the review_id_table in RDS
 
 ![pgAdmin2.PNG](images/pgAdmin2.PNG)
+
+All remaining tables snippets within the **amazon_reviews_db** are availble in the [images](https://github.com/alysnow/big-data-challenge/blob/main/images) folder.
 
 - - -
 
